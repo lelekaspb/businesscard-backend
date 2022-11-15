@@ -99,7 +99,7 @@ describe('Business Card Controller (e2e)', () => {
 
       //Assert (expect)
       const res = result.body;
-      console.log(res);
+
       expect(res.length).toEqual(2);
       expect(res).toStrictEqual([
         expect.objectContaining({
