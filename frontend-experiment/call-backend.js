@@ -4,5 +4,3 @@ async function callbackend() {
   console.log(res);
 }
 callbackend();
-
-// test
