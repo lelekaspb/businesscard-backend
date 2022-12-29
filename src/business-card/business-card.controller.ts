@@ -31,8 +31,8 @@ export class BusinessCardController {
     console.log(id);
   }
 
-  @Post()
-  createBusinessCard(@Body() bcDto: BusinessCardDto) {
-    return this.bcService.createBusinessCard(bcDto);
-  }
+  // @Post()
+  // createBusinessCard(@Body() bcDto: BusinessCardDto) {
+  //   return this.bcService.createBusinessCard(bcDto);
+  // }
 }
