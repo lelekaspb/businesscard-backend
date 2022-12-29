@@ -26,6 +26,6 @@ jobs:
 
       - run: npm install
 
-      - run: npm test
+      - run: mongod --version
         env:
           CI: true
