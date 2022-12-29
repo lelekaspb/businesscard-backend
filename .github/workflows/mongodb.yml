@@ -26,6 +26,6 @@ jobs:
 
       - run: npm install
 
-      - run: npm run dummy
+      - run: npm run test:e2e
         env:
           CI: true
