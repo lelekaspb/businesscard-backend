@@ -11,6 +11,10 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   app.use(cors());
 
+  // for deployment on Heroku
+  app.enableCors();
+  await app.listen(3005);
+
   // Round trip style application - Handlebars - Start
   // const app = await NestFactory.create<NestExpressApplication>(
   //   AppModule,
@@ -20,6 +24,6 @@ async function bootstrap() {
   // app.setViewEngine('hbs');
   // Round trip style application - Handlebars - End
 
-  await app.listen(3005);
+  // await app.listen(3005);
 }
 bootstrap();

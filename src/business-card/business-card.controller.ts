@@ -21,7 +21,7 @@ export class BusinessCardController {
     // console.log('request');
     // console.log(request);
     const result: BusinessCard[] = await this.bcService.getBusinessCards();
-    // console.log('result');
+    console.log('result');
     // console.log(result);
 
     return result;
